@@ -38,6 +38,9 @@ module.exports = function(config) {
 		customLaunchers: {
 			"ChromeRemote": {
 				base: "ChromeHeadless",
+				flag:[
+					'--no-sandbox',
+					'--proxy-bypass-list=*'],
 				config: {
                     hostname: "localhost",
 					port: 4444
