@@ -11,7 +11,7 @@ node() {
     stage('Jenkins')
     {
        karmaExecuteTests script: this,
-	       dockerImage: "yukinying/chrome-headless-browser-selenium",
+	       dockerImage: "alpeware/chrome-headless-trunk",
         installCommand: "npm config set @sap:registry https://npm.sap.com && npm install --quiet", 
 	  runCommand: 'npm test'
     }
