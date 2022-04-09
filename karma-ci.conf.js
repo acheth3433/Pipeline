@@ -37,14 +37,14 @@ module.exports = function(config) {
         },
 		customLaunchers: {
 			"ChromeRemote": {
-				base: "WebDriver",
+				base: "ChromeHeadless",
 				config: {
                     hostname: "localhost",
 					port: 4444
 				},
 				browserName: "chrome",
 				name: "Karma",
-				pseudoActivityInterval: 30000
+				pseudoActivityInterval: 60000
 			}
 		},
 
