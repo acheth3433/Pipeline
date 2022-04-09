@@ -8,7 +8,7 @@ node() {
     {
         mtaBuild script: this
     }
-    stage('test')
+    stage('Jenkins')
     {
        karmaExecuteTests script: this, modules: ['./nodejs'],
         installCommand: "npm config set @sap:registry https://npm.sap.com && npm install --quiet", 
