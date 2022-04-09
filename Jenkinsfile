@@ -11,7 +11,7 @@ node() {
     stage('Jenkins')
     {
        karmaExecuteTests script: this,
-	       dockerImage: node:lts-alpine3.15,
+	       dockerImage: "node:lts-alpine3.15",
         installCommand: "npm config set @sap:registry https://npm.sap.com && npm install --quiet", 
 	  runCommand: 'npm test'
     }
